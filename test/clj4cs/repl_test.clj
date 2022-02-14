@@ -1,6 +1,6 @@
-(ns clj4cs-practice.repl-test
+(ns clj4cs.repl-test
   (:require [clojure.test :refer :all]
-            [clj4cs-practice.repl :refer [fizzbuzz]]))
+            [clj4cs.repl :refer [fizzbuzz]]))
 
 ; copiamos o código que iteramos no source para testes e pronto, temos isso automatizado
 (deftest fizzbuzz-test

@@ -1,4 +1,4 @@
-(ns clj4cs-practice.repl)
+(ns clj4cs.repl)
 
 (comment
   ; fizzbuzz com modulos

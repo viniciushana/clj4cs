@@ -9,8 +9,8 @@ base: cloudius/osv-openjdk8
 #
 # The command line passed to OSv to start up the application.
 #
-#cmdline: /java.so -cp /clj4cs-practice/app.jar clojure.main -m clj4cs-practice
-cmdline: /java.so -jar /clj4cs-practice/app.jar
+#cmdline: /java.so -cp /clj4cs/app.jar clojure.main -m clj4cs
+cmdline: /java.so -jar /clj4cs/app.jar
 
 #
 # The command to use to build the application.
@@ -25,5 +25,5 @@ cmdline: /java.so -jar /clj4cs-practice/app.jar
 # List of files that are included in the generated image.
 #
 files:
-  /clj4cs-practice/app.jar: ./target/clj4cs-practice-0.0.1-SNAPSHOT-standalone.jar
+  /clj4cs/app.jar: ./target/clj4cs-0.0.1-SNAPSHOT-standalone.jar
 

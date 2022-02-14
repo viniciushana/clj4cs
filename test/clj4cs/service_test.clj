@@ -1,8 +1,8 @@
-(ns clj4cs-practice.service-test
+(ns clj4cs.service-test
   (:require [clojure.test :refer :all]
             [io.pedestal.test :refer :all]
             [io.pedestal.http :as bootstrap]
-            [clj4cs-practice.service :as service]))
+            [clj4cs.service :as service]))
 
 (def service
   (::bootstrap/service-fn (bootstrap/create-servlet service/service)))

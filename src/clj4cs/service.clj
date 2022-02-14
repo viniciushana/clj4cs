@@ -1,4 +1,4 @@
-(ns clj4cs-practice.service
+(ns clj4cs.service
   (:require [io.pedestal.http :as http]
             [io.pedestal.http.route :as route]
             [io.pedestal.http.body-params :as body-params]
@@ -35,7 +35,7 @@
 ;      ["/about" {:get about-page}]]]])
 
 
-;; Consumed by clj4cs-practice.server/create-server
+;; Consumed by clj4cs.server/create-server
 ;; See http/default-interceptors for additional options you can configure
 (def service {:env :prod
               ;; You can bring your own non-default interceptors. Make
