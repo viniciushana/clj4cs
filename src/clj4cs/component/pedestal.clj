@@ -1,4 +1,4 @@
-(ns clj4cs.components.pedestal
+(ns clj4cs.component.pedestal
   (:require [com.stuartsierra.component :as component]
             [io.pedestal.http :as http]))
 

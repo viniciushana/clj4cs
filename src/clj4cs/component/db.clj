@@ -1,4 +1,4 @@
-(ns clj4cs.components.db
+(ns clj4cs.component.db
   (:require [com.stuartsierra.component :as component]))
 
 (defn connect-to-database [host port]
@@ -14,9 +14,11 @@
 
   (stop [component]
     (println ";; Stopping database")
-    (.close connection)                                     ; é assim que se chama um método de objeto java
+    #_(.close connection)                                     ; é assim que se chama um método de objeto java
     (assoc component :connection nil)))                     ; retornamos o componente sem uma conexão ativa
 
 (defn new-database [host port]
-  (defn new-database [host port]
-    (map->Database {:host host :port port})))               ; essa função é dinamicamente gerada para converter um map em um record
+  (map->Database {:host host :port port}))                  ; essa função é dinamicamente gerada para converter um map em um record
+
+(defn query [db criteria]                                   ; recebe o db e retorna os resultados do criterio
+  [])

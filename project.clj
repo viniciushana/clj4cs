@@ -8,6 +8,9 @@
 
                  [com.stuartsierra/component "1.0.0"]
 
+                 [nubank/mockfn "0.7.0"]
+                 [nubank/state-flow "5.14.1"]
+
                  ;; Remove this line and uncomment one of the next lines to
                  ;; use Immutant or Tomcat instead of Jetty:
                  [io.pedestal/pedestal.jetty "0.5.10"]
