@@ -21,5 +21,5 @@
   (map->Producer {:host host :port port}))
 
 (defn produce [producer topic message]
-  ; does the magic
+  ; aqui seria apenas uma função para de fato realizar o efeito colateral de produzir a mensagem
   true)

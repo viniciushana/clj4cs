@@ -12,6 +12,9 @@
 (def producer (producer/new-producer "localhost" 123))
 (def db (db/new-database "localhost" 123))
 
+; o mockfn é uma lib do nubank que facilita a criação de mocks.
+; o providing determina comportamentos que valem no escopo do deftest
+; o verifying faz asserções nos mocks, usando alguns matchers avançados que outra lib do nubank provê
 (mfn/deftest notifying-customers-with-unused-active-cards
   (mfn/providing
     (db/query db "select...") factory/customers
